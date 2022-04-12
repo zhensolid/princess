@@ -4,6 +4,6 @@ if val[-1] in ["C","c"]:
     print("转换后的温度为：%.2fe"%f)
 elif val[-1] in ["F","f"]:
     c = (float(val[0:-1])-32)/1.8
-    print("转换后的温度为：%.2fc"%C)
+    print("转换后的温度为：%.2fc"%c)
 else:
     print("输入有误")
