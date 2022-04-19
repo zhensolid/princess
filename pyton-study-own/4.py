@@ -17,6 +17,7 @@ for i in range(0,4):
 #因为是列名，所以是第一行
 
 for aa in range(1,10):
+    #! aa循环第一个参数行数
     sheet.write(aa,0,fake.name())
     sheet.write(aa,1,fake.phone_number())
     sheet.write(aa,2,fake.ssn(min_age=18, max_age=90))
