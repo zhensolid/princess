@@ -12,11 +12,11 @@ def get_excel_date():
     data = []
 #读取每一行？？？【待理解】
     for row in worksheet.iter_rows(min_row=1):
-        #创建一个名称为dict_data的空白字典
+#创建一个名称为dict_data的空白字典
         dict_data = {}
-#读取每一行第一个的数据
+#每一行第一个的数据赋值给name
         dict_data["name"] = row[0].value
-#读取每一行的第三个数据
+#每一行的第三个数据复制给value
 #python从0开始算
         dict_data["value"] = row[2].value
 #将dict_data保存到data
