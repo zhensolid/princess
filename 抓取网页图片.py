@@ -29,7 +29,7 @@ for img in imgs:
     img_url = img['src']
     # 请求图片
     img_response = requests.get(img_url)
-    # 保存图片
+    # 保存图片到指定的位置
     with open('E:/images/' + img_url.split('/')[-1], 'wb') as f:
         f.write(img_response.content)
         print('保存成功：', img_url.split('/')[-1])
