@@ -1,4 +1,5 @@
 # -*- coding:utf-8 -*-
+# note 作用：解Python源码中存在乱码的问题
 import time
 from pynput.keyboard import Key, Controller
 
