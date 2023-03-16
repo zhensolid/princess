@@ -26,7 +26,7 @@ label3 = tk.Label(window, text="消费日期")
 label3.pack()
 # 创建日期选择框
 transaction_date = DateEntry(window, width=12, background='darkblue',
-                             foreground='white', borderwidth=2, year=2021,
+                             foreground='white', borderwidth=2, year=2023,
                              month=1, day=1)
 transaction_date.pack()
 
