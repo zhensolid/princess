@@ -6,6 +6,8 @@ from tkcalendar import DateEntry
 
 # 创建窗口
 window = tk.Tk()
+window.title("信用卡记录软件")
+
 
 # 添加标签和输入框
 label1 = tk.Label(window, text="信用卡银行名称")
