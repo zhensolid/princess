@@ -13,7 +13,7 @@ window.title("信用卡记录软件")
 label1 = tk.Label(window, text="信用卡银行名称")
 label1.pack()
 # 创建下拉框
-banks = ["工商银行", "中信银行", "光大银行", "广发银行"]
+banks = ["工商银行", "中信银行", "光大银行", "广发银行", "平安银行", "招商银行"]
 variable = tk.StringVar(window)
 variable.set(banks[0])
 option_menu = tk.OptionMenu(window, variable, *banks)
@@ -43,6 +43,8 @@ except mysql.connector.Error as error:
     window.destroy()
 
 # 添加数据函数
+
+
 def add_data():
     # 获取输入框的值
     credit_card = variable.get()
@@ -68,6 +70,7 @@ def add_data():
     # 关闭连接
     mycursor.close()
     mydb.close()
+
 
 # 添加按钮
 button_add = tk.Button(window, text="添加", command=add_data)
