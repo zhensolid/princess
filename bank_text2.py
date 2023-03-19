@@ -20,6 +20,7 @@ option_menu = tk.OptionMenu(window, variable, *banks)
 option_menu.pack()
 label2 = tk.Label(window, text="消费金额")
 label2.pack()
+#note 调整输入金额的宽度
 entry2 = tk.Entry(window,width=10)
 entry2.pack()
 label3 = tk.Label(window, text="消费日期")
