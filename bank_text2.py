@@ -20,7 +20,7 @@ option_menu = tk.OptionMenu(window, variable, *banks)
 option_menu.pack()
 label2 = tk.Label(window, text="消费金额")
 label2.pack()
-entry2 = tk.Entry(window)
+entry2 = tk.Entry(window,width=10)
 entry2.pack()
 label3 = tk.Label(window, text="消费日期")
 label3.pack()
@@ -74,11 +74,12 @@ def add_data():
 
 # 添加按钮
 button_add = tk.Button(window, text="添加", command=add_data)
-button_add.pack(side=tk.LEFT)
+# 按钮距离调整
+button_add.pack(side=tk.LEFT, padx=(40,10))
 
 # 添加关闭按钮
 button_close = tk.Button(window, text="关闭", command=window.destroy)
-button_close.pack(side=tk.RIGHT)
+button_close.pack(side=tk.RIGHT, padx=(10,40))
 
 # 运行窗口
 window.mainloop()
