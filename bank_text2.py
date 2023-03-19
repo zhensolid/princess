@@ -3,6 +3,11 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
 from tkcalendar import DateEntry
+#导入模块
+import locale
+
+# 将语言环境设置为中文
+locale.setlocale(locale.LC_TIME, 'zh_CN.UTF-8')
 
 # 创建窗口
 window = tk.Tk()
@@ -25,10 +30,11 @@ entry2 = tk.Entry(window,width=10)
 entry2.pack()
 label3 = tk.Label(window, text="消费日期")
 label3.pack()
-# 创建日期选择框
-transaction_date = DateEntry(window, width=12, background='darkblue',
+# 创建日期选择框，并且设置成中文环境
+transaction_date = DateEntry(window, width=15, background='darkblue',
                              foreground='white', borderwidth=2, year=2023,
-                             month=1, day=1)
+                             month=1, day=1,locale='zh_CN.UTF-8',
+                             date_pattern='yyyy年mm月dd日')
 transaction_date.pack()
 
 # 连接数据库
